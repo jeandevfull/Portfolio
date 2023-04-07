@@ -325,32 +325,3 @@ button{
     font-family: 'Ubuntu', sans-serif;
      font-size: 30px;
 }
-
-@media(max-width:768px){
-    h1{
-        font-size: 30px;
-    }
-    header{
-        display: none;
-    }
-   .arrow{
-    width: 18%;
-  }
-  .my-container{
-    background-position: 100%;
-  }
-  .profile-container{
-    display: flex;
-    flex-direction: column;
-    height: 80%;
-    width: 100%;
-    font-size: 8px;
-   }
-    .profile-card{
-        width: 250px;
-         display: flex;
-       
-    }
-
-    
-}
