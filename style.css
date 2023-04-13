@@ -31,7 +31,7 @@ h1{
     font-family: 'Ubuntu', sans-serif;
 }
 
-nav{
+.menu{
     width: 50%;
 }
 
@@ -43,7 +43,7 @@ ul{
     width: 900px;
 }
 
-li{
+li a{
     font-family: 'Ubuntu', sans-serif;
     font-size: 26px;
     color: black;
@@ -51,7 +51,7 @@ li{
     transition: 1s;
 }
 
-li:hover{
+li a:hover{
     color:#ffffff;
 }
 
@@ -246,8 +246,8 @@ li:hover{
     height: auto;
     position: relative;
     border-radius: 8px;
-    right: 20px;
-    top: 40px;
+    right: 30px;
+    top: 20px;
     transition: 1s;
 }
 
