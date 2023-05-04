@@ -6,9 +6,7 @@
     list-style: none;
 
 }
-#btn-mobile{
-    display: none;
-}
+  
 
 .my-container{
     height: 100vh;
@@ -24,6 +22,9 @@
     padding-top: 10px;
 }
 
+a[href^="#"][class*="smooth-scroll"] {
+    scroll-behavior: smooth;
+  }
 
 h1{
     font-size: 65px;
@@ -102,7 +103,7 @@ li a:hover{
     -webkit-animation-delay:  0s;
 }
 
-.content-container {
+#content-container {
     height: 100vh;
     background-color: #333;
 }
@@ -193,6 +194,11 @@ li a:hover{
     color:white;
     font-size: 20px;
 }
+#title{
+    color: #b800e6;
+    font-size: 28px;
+    display: block;
+}
 
 .project-container{
     width: 100%;
@@ -265,8 +271,13 @@ li a:hover{
     
 }
 
-.content-container-card{
+#content-container-card{
     height: 130vh;
+    background-color: #333;
+}
+
+#content-container-form{
+    height: 100vh;
     background-color: #333;
 }
 
