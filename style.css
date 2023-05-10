@@ -32,7 +32,7 @@ h1{
     font-family: 'Ubuntu', sans-serif;
 }
 
-.menu{
+.menus{
     width: 50%;
     position: fixed;
     right: 20%;
@@ -238,9 +238,11 @@ h4{
     row-gap: 30px;
     column-gap: 25px;
 }
-  
-.cards:hover{
-    transform: scale(1.08);
+
+.cards-content:hover > :not(:hover){
+    transition: 1s;
+    transform: scale(0.9);
+    opacity: .3;
 }
 
 .cards{
@@ -250,7 +252,6 @@ h4{
     background-position: 50%,50%;
     border-radius: 10px;
     cursor: pointer;
-    transition: 1s;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -341,7 +342,7 @@ textarea{
     border-radius: 8px;
 }
 
-button{
+.button-form{
     width: 100%;
     border: none;
     background:white;
@@ -353,11 +354,88 @@ button{
     font-size: 19px;
 }
 
-button:hover{
+.button-form:hover{
     color: black;
 }
 
 .contact{
     font-family: 'Ubuntu', sans-serif;
     font-size: 30px;
+}
+
+
+
+@media (max-width:768px) {
+  .my-container{
+    height: 100vh;
+  }
+
+  h1{
+    width: 100%;
+    font-size: 45px;
+    text-align: center;
+    margin-right: 15px;
+  }
+
+  .arrow{
+    width: 15%;
+  }
+
+  .profile-container{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .profile-content{
+    width: 100%;
+    height: 70%;
+  }
+
+  .profile-image{
+    width: 120px;
+    height: 160px;
+  }
+
+  .profile-card{
+    width: 85%;
+  }
+
+  h4{
+    font-size: 13px;
+  }
+
+  .icons-container{
+    width: 100%;
+    margin-left: 15px;
+    display: grid;
+    grid-template-columns: repeat( 3, 1fr);
+  }
+
+  .profile-sinopse{
+    height: auto;
+    font-size: 14px;
+    width: 400px;
+    margin-right: 5px;
+    
+  }
+  
+  #content-container-card{
+    height: 260vh;
+  }
+
+  .cards-sinopse{
+    margin-top: 23px;
+    font-size: 15px;
+  }
+
+  .cards-content{
+    width: 92%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #content-container-form{
+    width: 99%
+  }
+  
 }
