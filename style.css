@@ -365,9 +365,9 @@ textarea{
 
 
 
-@media (max-width:768px) {
+@media (max-width:500px) {
   .my-container{
-    height: 100vh;
+    height: 110vh;
   }
 
   h1{
@@ -382,6 +382,7 @@ textarea{
   }
 
   .profile-container{
+    margin-top: 25px;
     display: flex;
     flex-direction: column;
   }
@@ -392,8 +393,8 @@ textarea{
   }
 
   .profile-image{
-    width: 120px;
-    height: 160px;
+    width: 110px;
+    height: 120px;
   }
 
   .profile-card{
@@ -411,20 +412,24 @@ textarea{
     grid-template-columns: repeat( 3, 1fr);
   }
 
+  .icon-item{
+    width: 50%;
+  }
+
   .profile-sinopse{
+    margin-top: 70px;
     height: auto;
-    font-size: 14px;
-    width: 400px;
-    margin-right: 5px;
+    font-size: 12px;
+    width: 360px;
     
   }
   
   #content-container-card{
-    height: 260vh;
+    height: 360vh;
   }
 
   .cards-sinopse{
-    margin-top: 23px;
+    margin-top: 30px;
     font-size: 15px;
   }
 
@@ -435,7 +440,7 @@ textarea{
   }
 
   #content-container-form{
-    width: 99%
+    width: 99%;
   }
   
 }
