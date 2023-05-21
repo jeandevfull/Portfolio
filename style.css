@@ -4,7 +4,6 @@
     padding: 0;
     text-decoration: none;
     list-style: none;
-
 }
   
 
@@ -22,9 +21,12 @@
     padding-top: 10px;
 }
 
-a[href^="#"][class*="smooth-scroll"] {
-    scroll-behavior: smooth;
-  }
+header{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    height: 40px;
+}
 
 h1{
     font-size: 65px;
@@ -32,21 +34,26 @@ h1{
     font-family: 'Ubuntu', sans-serif;
 }
 
-.menus{
+nav{
     width: 50%;
     position: fixed;
-    right: 20%;
+    left: 55%;
+    transform: translate(-50%);
 }
 
+a{
+    text-decoration: none;
+    color: inherit;
+}
 
-ul{
+.menus{
     display: flex;
     justify-content: space-between;
     list-style: none;
     width: 900px;
 }
 
-li a{
+a li{
     font-family: 'Ubuntu', sans-serif;
     font-size: 26px;
     color:white;
@@ -54,7 +61,7 @@ li a{
     transition: .5s;
 }
 
-li a:hover{
+a li:hover{
     color:#b800e6;
 }
 
@@ -206,6 +213,17 @@ h4{
     border-radius: 6px;
     padding: 8px;
 }
+
+.dowload-cv{
+    cursor: pointer;
+    margin-top: 14px;
+    background-color: #b800e6;
+    color: white;
+    font-size: 18px;
+    width: 120px;
+    border-radius: 8px;
+}
+
 #title{
     color: #b800e6;
     font-size: 28px;
@@ -259,19 +277,19 @@ h4{
 }
 
 .banner1{
-    background-image: url('./homemform.png');
+    background-image: url('././assets/homemform.png');
 }
 
 .banner2{
-    background-image: url('./imc.png');
+    background-image: url('././assets/imc.png');
 }
 
 .banner3{
-    background-image: url('./hora.png');
+    background-image: url('././assets/hora.png');
 }
 
 .banner4{
-    background-image: url('./contador.png');
+    background-image: url('././assets/contador.png');
 }
 
 .cards-sinopse{
@@ -363,11 +381,41 @@ textarea{
     font-size: 30px;
 }
 
-
-
-@media (max-width:500px) {
+/*responsividade*/
+@media (max-width: 480px) {
   .my-container{
-    height: 110vh;
+    justify-content: space-between;
+    padding: 10px 30px;
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .hamburger-menu {
+    top: 20px;
+    right: 40px;
+    position: fixed;
+    cursor: pointer;
+  }
+
+  .hamburger-menu.open .line:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  
+  .hamburger-menu.open .line:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .hamburger-menu.open .line:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .hamburger-menu .line {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color:#b800e6;
+    border-radius: 5px;
+    margin: 5px auto;
   }
 
   h1{
@@ -378,7 +426,7 @@ textarea{
   }
 
   .arrow{
-    width: 15%;
+    width: 18%;
   }
 
   .profile-container{
@@ -442,5 +490,95 @@ textarea{
   #content-container-form{
     width: 99%;
   }
-  
+
+  .dowload-cv{
+    font-size: 16px;
+  }
+
+  .menus1{
+    width: 50%;
+    position: static;
+    transform: none;
+  }
+
+  .menus {
+    position: fixed;
+    top: 70px;
+    width: 100%;
+    right: -100%;
+    height: 95%;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #fff;
+    gap: -10px;
+    transition: 0.3s;
+    align-items: center;
+  }
+
+  a li{
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .menus.open{
+    right: 0%;
+    z-index: 2;
+  }
+
 }
+
+@media (min-width: 480px) and (max-width: 1300px) {
+  .my-container{
+    justify-content: space-between;
+    padding: 10px;
+    text-align: center;
+    max-width: 100%;
+  }
+
+  header{
+    justify-content: center;
+  }
+
+  .menus1{
+    display: flex;
+    width: 85%;
+    position: fixed;
+    margin: auto;
+  }
+
+  a li {
+    font-size: 23px;
+  }
+
+  .arrow{
+    width: 15%;
+  }
+
+  .profile-content{
+    width: 100%;
+  }
+
+  .profile-card{
+    width: 70%;
+  }
+
+  .profile-sinopse{
+    width: 100%;
+    font-size: 14px
+  }
+
+  .icons-container{
+    width: 100%;
+    margin-left: 15px;
+    display: grid;
+    grid-template-columns: repeat( 3, 1fr);
+  }
+
+  .icon-item{
+    width: 60%;
+  }
+}
+
+
+
