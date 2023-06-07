@@ -449,7 +449,7 @@ textarea{
     border-radius: 8px;
 }
 
-.button-form{
+#button-form{
     width: 100%;
     border: none;
     background:white;
@@ -461,7 +461,7 @@ textarea{
     font-size: 19px;
 }
 
-.button-form:hover{
+#button-form:hover{
     color: black;
 }
 
